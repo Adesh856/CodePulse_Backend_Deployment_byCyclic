@@ -14,6 +14,9 @@ app.use(cors())
 app.use(cookiParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.get("/",(req,res)=>{
+    res.status(200).send({"msg":"Hello for CodePulseAI app"})
+})
 app.use("/user", userrouter)
 app.use(auth)
 app.use("/chatgpt", chatRouter);
