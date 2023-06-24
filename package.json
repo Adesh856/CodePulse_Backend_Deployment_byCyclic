@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "start:notification": "nodemon index.js",
-    "start:both": "concurrently \"npm run start:api\" \"npm run start:notification\""
+    "start": "nodemon index.js" 
   },
   "keywords": [],
   "author": "",
